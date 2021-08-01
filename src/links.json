@@ -1,5 +1,9 @@
 {
   "/": "https://nwidolfest.com",
-  "1": "https://fee.org/articles/the-use-of-knowledge-in-society/",
-  "tw": "https://twitter.com/nwidolfest"
+  "tw": "https://twitter.com/nwidolfest",
+  "reg": "https://nwidolfest.com/register",
+  "hotel": "https://nwidolfest.com/hotel",
+  "events": "https://nwidolfest.com/events",
+  "guests": "https://nwidolfest.com/guests",
+  "blog": "https://nwidolfest.com/blog",
 }
