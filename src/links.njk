@@ -7,6 +7,15 @@ permalink: "{{ link }}/"
 ---
 
 <!DOCTYPE html>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XPTSB6WENM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XPTSB6WENM');
+</script>
 {% if env.js -%}
   <script>window.location.replace('{{ links[link] }}')</script>
 {% else -%}
