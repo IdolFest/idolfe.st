@@ -1,56 +1,48 @@
-# Suri
+# idolfe.st
 
-Suri is your own link shortener that's easily deployed as a static site. No
-server-side hosting, serverless cloud functions, or database necessary. Suri can
-be deployed to Vercel, Netlify, and more for free in 60 seconds.
+A link shortener based on a slightly modified version of [Suri](https://github.com/jstayton/suri).
 
-Suri doesn't give a 💩 about "technically superior" `3xx` server redirects. Suri
-just wants you to finally use that domain you waste \$39/year on because you've
-never actually done anything with it.
-
-Try it out with one of my own shortlinks: https://jstayton.com/tw 👉🏻
-https://twitter.com/kidjustino
-
-## Getting Started
-
-### Install in One Click (for Free)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fjstayton%2Fsuri&project-name=suri&repository-name=suri)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https%3A%2F%2Fgithub.com%2Fjstayton%2Fsuri)
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https%3A%2F%2Fgithub.com%2Fjstayton%2Fsuri)
-
-[![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https%3A%2F%2Fgithub.com%2Fjstayton%2Fsuri%2Ftree%2Fmaster)
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https%3A%2F%2Fgithub.com%2Fjstayton%2Fsuri)
-
-Once complete, try accessing the root path of your URL – it should redirect back
-to [my GitHub profile](https://github.com/jstayton) if everything's working.
+## Editing
 
 ### Manage Links
 
-Links are managed through [`src/links.json`](src/links.json), which is seeded
-with a few examples to start:
+Links are managed through [`src/links.json`](src/links.json):
 
 ```json
 {
-  "/": "https://github.com/jstayton",
-  "1": "https://fee.org/articles/the-use-of-knowledge-in-society/",
-  "tw": "https://twitter.com/kidjustino"
+  "/": "https://nwidolfest.com",
+  "tw": "https://twitter.com/nwidolfest",
+  "reg": "register"
 }
 ```
 
-It couldn't be simpler: the key is the "shortlink" path that gets redirected,
-and the value is the target URL. Keys can be as short or as long as you want,
-using whatever mixture of characters you want. `/` is a special entry for
-redirecting the root path.
+The part before the `:` (the "key") is the "shortlink" path that gets redirected. The part after the `:` (the "value") is what the user is redirected to. So `"tw": "https://twitter.com/nwidolfest` translates to, "if a user visits `idolfe.st/tw`, redirect them to `https://twitter.com/nwidolfest`".
+ 
+You can provide either a full URL (like `http://google.com` or `https://twitter.com/foo`), or a path (like `register` or `hotel`). If you only provide a path, the link shortener will prepend https://nwidolfest.com/ to the path. That means you can type `"reg": "register"` and Suri will create a shortlink to https://nwidolfest.com/register. (You can do `"reg": "https://nwidolfest.com/register"` too, but this way saves you some typing.)
 
-Go ahead and make an edit, then commit and push to your repository. The hosting
-provider you chose above should automatically build and deploy your change.
+Keys can be as short or as long as you want, using whatever mixture of characters you want. `/` is a special entry for redirecting the root path.
+
+### How to Edit
+
+You can [edit `src/links.json`](https://github.com/NWIdolFest/idolfe.st/edit/main/src/links.json) in your browser.
+
+You'll see curly braces `{}` at the start and end of the file. Don't touch them! All of your edits will happen inside those braces. 
+
+To add a new shortlink:
+
+1. Add a comma `,` to the last redirect in the file. 
+   1. The comma goes on the second to last line of the file, before the `}`. 
+   1. The comma goes outside the quotation marks.
+   1. The last redirect should now look something like: `"blog": "blog",`. 
+1. Add a new line with the `"shortlink key": "redirect value"` you want. 
+   1. Make sure to use quotes around both the key and the value. 
+   1. Do *NOT* end the line with a comma.
+   1. The last redirect should now look something like: `"insta": "https://instagram.com/NWIdolFest"` (note the lack of comma!).
+1. Click the green "Commit changes" button.
+
 That's it!
 
-_Pro tip_: Bookmark the page to
-[edit `src/links.json` directly in GitHub](https://github.com/jstayton/suri/edit/master/src/links.json)
-(or wherever), and use the default commit message that's populated. Now show me
-a link shortener that's easier than that!
+## Development
 
 ### Config
 
