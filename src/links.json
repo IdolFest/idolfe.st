@@ -1,9 +1,9 @@
 {
   "/": "https://nwidolfest.com",
   "tw": "https://twitter.com/nwidolfest",
-  "reg": "https://nwidolfest.com/register",
-  "hotel": "https://nwidolfest.com/hotel",
-  "events": "https://nwidolfest.com/events",
-  "guests": "https://nwidolfest.com/guests",
-  "blog": "https://nwidolfest.com/blog"
+  "reg": "register",
+  "hotel": "hotel",
+  "events": "events",
+  "guests": "guests",
+  "blog": "blog"
 }

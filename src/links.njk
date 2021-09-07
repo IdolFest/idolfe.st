@@ -16,8 +16,12 @@ permalink: "{{ link }}/"
 
   gtag('config', 'G-XPTSB6WENM');
 </script>
-{% if env.js -%}
-  <script>window.location.replace('{{ links[link] }}')</script>
-{% else -%}
-  <meta http-equiv=refresh content="0; url={{ links[link] }}">
+{% if links[link] -%}
+  {%  if 'http' in links[link] -%}
+    {% set prefix = '' %}
+  {% else -%}
+    {% set prefix = 'https://nwidolfest.com/' %}
+  {%endif -%}
+  {% set url = [prefix, links[link]] | join %}
 {% endif -%}
+{{ url }}
