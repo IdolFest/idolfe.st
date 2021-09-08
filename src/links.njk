@@ -24,4 +24,8 @@ permalink: "{{ link }}/"
   {%endif -%}
   {% set url = [prefix, links[link]] | join %}
 {% endif -%}
-{{ url }}
+{% if env.js -%}
+    <script>window.location.replace({{ url }}')</script>
+{% else -%}
+  <meta http-equiv=refresh content="0; url={{ url }}">
+{% endif -%}
