@@ -6,7 +6,7 @@ A link shortener based on a slightly modified version of [Suri](https://github.c
 
 ### Manage Links
 
-Links are managed through [`src/links.json`](src/links.json):
+Links are managed through the file [`src/links.json`](src/links.json):
 
 ```json
 {
@@ -16,11 +16,11 @@ Links are managed through [`src/links.json`](src/links.json):
 }
 ```
 
-The part before the `:` (the "key") is the "shortlink" path that gets redirected. The part after the `:` (the "value") is what the user is redirected to. So `"tw": "https://twitter.com/nwidolfest` translates to, "if a user visits `idolfe.st/tw`, redirect them to `https://twitter.com/nwidolfest`".
+`"tw": "https://twitter.com/nwidolfest` translates to: "if a user visits `idolfe.st/tw`, redirect them to `https://twitter.com/nwidolfest`". 
  
-You can provide either a full URL (like `http://google.com` or `https://twitter.com/foo`), or a path (like `register` or `hotel`). If you only provide a path, the link shortener will prepend https://nwidolfest.com/ to the path. That means you can type `"reg": "register"` and Suri will create a shortlink to https://nwidolfest.com/register. (You can do `"reg": "https://nwidolfest.com/register"` too, but this way saves you some typing.)
+The part before the `:` (the "key") is what will be appended to `idolfe.st` to create a shortlink for a user to visit. Keys can be as short or as long as you want, using whatever mixture of characters you want. `/` is a special entry for redirecting the root path.
 
-Keys can be as short or as long as you want, using whatever mixture of characters you want. `/` is a special entry for redirecting the root path.
+The part after the `:` (the "value") is the URL the user is redirected to. For the value, you can provide either a full URL (like `http://google.com` or `https://twitter.com/foo`), or a path (like `register` or `hotel`). If you only provide a path, the link shortener will prepend https://nwidolfest.com/ to the path. That means you can type `"reg": "register"` and Suri will create a shortlink to https://nwidolfest.com/register. (You can do `"reg": "https://nwidolfest.com/register"` too, but this way saves you some typing.)
 
 ### How to Edit
 
