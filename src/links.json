@@ -19,5 +19,7 @@
   "NL2022": "https://docs.google.com/forms/d/e/1FAIpQLSeQ1UEfnjumkztuKAOjYyp67SFl80jFYVnGCjWQwgRtnjPV-w/viewform",
   "vendorapp": "https://docs.google.com/forms/d/e/1FAIpQLScPlkiRl9onqc0oQcYdbP9Ba5vsDkQS0WDA9Cks_ae_x_25lA/viewform",
   "masqueradeapp": "https://docs.google.com/forms/d/e/1FAIpQLScPERQ2_bCiNT7RnY6ahqbDP0j-LNeGjo0yzKWCm1Sm3aMPSg/viewform",
-  "masquerade": "events/masquerade"
+  "masquerade": "events/masquerade",
+  "grandprixapp": "https://docs.google.com/forms/d/e/1FAIpQLSfNcWERPtdrkT7NJxQ9IUltXCZAoXvshVWnwB4h45C_cQ3VGA/viewform",
+  "grandprix": "events/grandprix"
 }
