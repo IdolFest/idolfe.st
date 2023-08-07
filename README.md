@@ -4,43 +4,41 @@ A link shortener based on a slightly modified version of [Suri](https://github.c
 
 ## Editing
 
-### Manage Links
-
-Links are managed through the file [`src/links.json`](src/links.json):
-
-```json
-{
-  "/": "https://nwidolfest.com",
-  "tw": "https://twitter.com/nwidolfest",
-  "reg": "register"
-}
-```
-
-`"tw": "https://twitter.com/nwidolfest` translates to: "if a user visits `idolfe.st/tw`, redirect them to `https://twitter.com/nwidolfest`". 
- 
-The part before the `:` (the "key") is what will be appended to `idolfe.st` to create a shortlink for a user to visit. Keys can be as short or as long as you want, using whatever mixture of characters you want. `/` is a special entry for redirecting the root path.
-
-The part after the `:` (the "value") is the URL the user is redirected to. For the value, you can provide either a full URL (like `http://google.com` or `https://twitter.com/foo`), or a path (like `register` or `hotel`). If you only provide a path, the link shortener will prepend https://nwidolfest.com/ to the path. That means you can type `"reg": "register"` and Suri will create a shortlink to https://nwidolfest.com/register. (You can do `"reg": "https://nwidolfest.com/register"` too, but this way saves you some typing.)
-
 ### How to Edit
 
 You can [edit `src/links.json`](https://github.com/NWIdolFest/idolfe.st/edit/main/src/links.json) in your browser.
+
+Each shortlink looks like this:
+
+`"tw": "https://twitter.com/nwidolfest"`
+
+That translates to: "If a user visits `idolfe.st/tw`, redirect them to `https://twitter.com/nwidolfest`.
 
 You'll see curly braces `{}` at the start and end of the file. Don't touch them! All of your edits will happen inside those braces. 
 
 To add a new shortlink:
 
-1. Add a comma `,` to the last redirect in the file. 
-   1. The comma goes on the second to last line of the file, before the `}`. 
-   1. The comma goes outside the quotation marks.
-   1. The last redirect should now look something like: `"blog": "blog",`. 
-1. Add a new line with the `"shortlink key": "redirect value"` you want. 
-   1. Make sure to use quotes around both the key and the value. 
-   1. Do *NOT* end the line with a comma.
+1. Add a comma `,` to the second-to-last line of the file, which should contain the current last redirect. This indicates that you're about to add a new redirect.
+   1. The last redirect should now look something like: `"tw": "https://twitter.com/nwidolfest",`.
+   1. The comma goes outside the quotation marks, and before the `}` on the last line.
+1. Then, add a new line with the `"shortlink": "redirect"` you want. 
+   1. Make sure to use quotes around both the shortlink and the redirect. 
+   1. Do *NOT* end the line with a comma. THIS IS SUPER IMPORTANT.
    1. The last redirect should now look something like: `"insta": "https://instagram.com/NWIdolFest"` (note the lack of comma!).
-1. Click the green "Commit changes" button.
+1. Click the green "Commit changes" button. You don't have to change anything about commit message.
+1. Wait about 5 minutes for the site to rebuild. On the home screen of the repository, you'll see a little orange dot when it's buiding that will change to a green check mark once it's complete. Then, your link should work.
+
+<img width="893" alt="Finished build" src="https://github.com/IdolFest/idolfe.st/assets/3937986/c4d8b6dc-45d9-4b54-bc71-30bc12549fb2">
+
+*If you see the green check, your shortlink is ready.*
 
 That's it!
+
+### Misc Details
+
+Shortlinks can be as short or as long as you want, using whatever mixture of characters you want. `/` is a special entry for redirecting the root path.
+
+For the redirect URL, you can provide either a full URL (like `http://google.com` or `https://twitter.com/foo`), or a path (like `register` or `hotel`). If you only provide a path, the link shortener will prepend https://nwidolfest.com/ to the path. That means you can type `"reg": "register"` and Suri will create a shortlink to https://nwidolfest.com/register. (You can do `"reg": "https://nwidolfest.com/register"` too, but this way saves you some typing.)
 
 ## Development
 
