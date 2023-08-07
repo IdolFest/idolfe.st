@@ -28,7 +28,12 @@ To add a new shortlink:
 1. Click the green "Commit changes" button. You don't have to change anything about commit message.
 1. Wait about 5 minutes for the site to rebuild. On the home screen of the repository, you'll see a little orange dot when it's buiding that will change to a green check mark once it's complete. Then, your link should work.
 
-<img width="893" alt="Finished build" src="https://github.com/IdolFest/idolfe.st/assets/3937986/c4d8b6dc-45d9-4b54-bc71-30bc12549fb2">
+<img width="774" alt="image" src="https://github.com/IdolFest/idolfe.st/assets/3937986/31504def-8430-45df-a657-711f947c4c19">
+<img width="1183" alt="image" src="https://github.com/IdolFest/idolfe.st/assets/3937986/77c7564a-1bc3-4628-9b5c-b6955d356196">
+
+*The orange dot means your shortlink is being created. You can click on the dot to get more details about the status.*
+
+<img width="891" alt="image" src="https://github.com/IdolFest/idolfe.st/assets/3937986/41e47e2a-635a-432a-a6af-8ba29a4c1057">
 
 *If you see the green check, your shortlink is ready.*
 
