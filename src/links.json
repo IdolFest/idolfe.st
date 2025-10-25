@@ -36,5 +36,7 @@
   "staff": "https://idolfes.us/volunteer",
   "usecoupon25": "https://nocodb.idolfest.org/dashboard/#/nc/form/31431901-026a-4c24-9cc6-c398f030d97b?Badge+Type=Attendee&Payment+Status=Unpaid&Registration+Status=New&Payment+Type=Comped",
   "lottery": "https://nocodb.idolfest.org/dashboard/#/nc/form/74d2f7c7-c68d-41b0-b7d2-55866721ce1f",
-  "paycoupon25": "https://square.link/u/5ogGGR4k"
+  "paycoupon25": "https://square.link/u/5ogGGR4k",
+  "payvendorbadge": "https://square.link/u/tVxwobwt",
+  "compvendorbadge": "https://nocodb.idolfest.org/dashboard/#/nc/form/6b30edce-b45a-4b0e-ae48-7f701aa595de?Badge+Type=Vendor&Payment+Status=Unpaid&Registration+Status=New"
 }
