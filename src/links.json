@@ -39,7 +39,7 @@
   "lottery": "https://nocodb.idolfest.org/dashboard/#/nc/form/74d2f7c7-c68d-41b0-b7d2-55866721ce1f",
   "paycoupon25": "https://square.link/u/5ogGGR4k",
   "payvendorbadge": "https://square.link/u/tVxwobwt",
-  "compvendorbadge": "https://nocodb.idolfest.org/dashboard/#/nc/form/a2e97629-7f76-4746-925c-73ed337daca3?Badge+Type=Vendor&Payment+Status=Completed&Registration+Status=New",
+  "compvendorbadge": "https://nocodb.idolfest.org/dashboard/#/nc/form/a2e97629-7f76-4746-925c-73ed337daca3?Badge+Type=Vendor&Payment+Status=Completed&Registration+Status=New&Payment+Type=Comped&How+did+you+hear+about+us%253F=Vendor+comped+badge.",
   "staffbadge": "https://nocodb.idolfest.org/dashboard/#/nc/form/774872fa-a7a4-4464-9ba4-adc0404133f9?Payment+Status=Completed&Registration+Status=Confirmed&Payment+Type=Comped",
   "pressbadge": "https://nocodb.idolfest.org/dashboard/#/nc/form/560b4699-6949-4443-94ab-025d1dd316a0?Payment+Status=Completed&Registration+Status=Confirmed&Payment+Type=Comped"
 }
