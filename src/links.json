@@ -41,5 +41,6 @@
   "payvendorbadge": "https://square.link/u/tVxwobwt",
   "compvendorbadge": "https://nocodb.idolfest.org/dashboard/#/nc/form/a2e97629-7f76-4746-925c-73ed337daca3?Badge+Type=Vendor&Payment+Status=Completed&Registration+Status=New&Payment+Type=Comped&How+did+you+hear+about+us%253F=Vendor+comped+badge.",
   "staffbadge": "https://nocodb.idolfest.org/dashboard/#/nc/form/774872fa-a7a4-4464-9ba4-adc0404133f9?Payment+Status=Completed&Registration+Status=Confirmed&Payment+Type=Comped",
-  "pressbadge": "https://nocodb.idolfest.org/dashboard/#/nc/form/560b4699-6949-4443-94ab-025d1dd316a0?Payment+Status=Completed&Registration+Status=Confirmed&Payment+Type=Comped"
+  "pressbadge": "https://nocodb.idolfest.org/dashboard/#/nc/form/560b4699-6949-4443-94ab-025d1dd316a0?Payment+Status=Completed&Registration+Status=Confirmed&Payment+Type=Comped",
+  "guestbadge": "https://nocodb.idolfest.org/dashboard/#/nc/form/92aae387-e361-41dd-bcc2-10c67272a098?Badge+Type=VIP&Payment+Status=Completed&Registration+Status=Confirmed&Payment+Type=Comped"
 }
